@@ -1,0 +1,17 @@
+﻿<sdk:Page
+    x:Class="OpenSilverAttachDetach.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:local="clr-namespace:OpenSilverAttachDetach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel x:Name="SP">
+        <Button Content="Add" Click="OnAddClick" />
+        <Button Content="Remove" Click="OnRemoveClick" />
+        <local:UserControlWithStyleInResources>
+            <StackPanel x:Name="SP2"></StackPanel>
+        </local:UserControlWithStyleInResources>
+    </StackPanel>
+</sdk:Page>
