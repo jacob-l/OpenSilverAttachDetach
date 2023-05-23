@@ -10,8 +10,15 @@
     <StackPanel x:Name="SP">
         <Button Content="Add" Click="OnAddClick" />
         <Button Content="Remove" Click="OnRemoveClick" />
+        <TextBlock Text="Click Add and then Remove. It will reattach(that is wrong) an element and it generates 'createElement is failed' in console. However, it should not" />
         <local:UserControlWithStyleInResources>
             <StackPanel x:Name="SP2"></StackPanel>
         </local:UserControlWithStyleInResources>
+        <Button Content="Click To Reproduce" Click="OnClick" Margin="0 100 0 0"></Button>
+        <StackPanel x:Name="Experiment">
+            <StackPanel x:Name="SpInside">
+                <TextBlock Text="'Click to reproduce' will generate a bunch of 'createElement is failed' in console. However, it should not" x:Name="TextBlock1"/>
+            </StackPanel>
+        </StackPanel>
     </StackPanel>
 </sdk:Page>
